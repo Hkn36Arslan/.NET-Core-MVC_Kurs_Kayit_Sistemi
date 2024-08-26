@@ -6,7 +6,7 @@ namespace BtkAkademi.Controllers
     public class CourseController : Controller
     {
         public IActionResult Index()
-        { 
+        {
             var model = Repository.Applications;
             return View(model);
         }
@@ -19,8 +19,17 @@ namespace BtkAkademi.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Apply([FromForm] Candidate model)
         {
-            Repository.Add(model);
-            return View("Feedback", model);
+            if(Repository.Applications.Any(c => c.Email.Equals(model.Email))){
+                ModelState.AddModelError("","Three is already an application for you.");
+            }
+
+            if (ModelState.IsValid)
+            {
+                Repository.Add(model);
+                return View("Feedback", model);
+            }
+            return View();
+
         }
     }
 }
