@@ -4,22 +4,22 @@
     Apply
 </div>
 
-<form method="post" action="/Course/Apply">
+<form method="post" asp-action="Apply">
     <div class="form-group my-2">
-        <label>Email</label>
-        <input type="email" name="Email" class="form-control" />
+        <label asp-for="Email"></label>
+        <input asp-for="Email"type="email" class="form-control" />
     </div>
     <div class="form-group my-2">
-        <label>FirstName</label>
-        <input type="text" name="FirstName" class="form-control" />
+        <label asp-for="FirstName"></label>
+        <input asp-for="FirstName" type="text" name="FirstName" class="form-control" />
     </div>
     <div class="form-group my-2">
-        <label>LastName</label>
-        <input type="text" name="LastName" class="form-control" />
+        <label asp-for="LastName"></label>
+        <input asp-for="LastName"type="text" name="LastName" class="form-control" />
     </div>
     <div class="form-group my-2">
-        <label>Age</label>
-        <select name="Age" class="form-control">
+        <label  asp-for="Age"></label>
+        <select asp-for="Age" class="form-control">
             <option value="18">18</option>
             <option value="19">19</option>
             <option value="20">20</option>
@@ -31,22 +31,22 @@
     <fieldset>
         <legend>Select One Course</legend>
         <p>
-            <input type="radio" id="mvc" name="SelectedCourse" value="ASP.Net Core MVC">
+            <input type="radio" id="mvc"  asp-for="SelectedCourse"  value="ASP.Net Core MVC">
             <label>ASP.Net Core MVC</label>
         </p>
         <p>
-            <input type="radio" id="api" name="SelectedCourse" value="ASP.Net Core API">
+            <input type="radio" id="api" asp-for="SelectedCourse" value="ASP.Net Core API">
             <label>ASP.Net Core API</label>
         </p>
         <p>
-            <input type="radio" id="blazor" name="SelectedCourse" value="Blazor">
+            <input type="radio" id="blazor" asp-for="SelectedCourse" value="Blazor">
             <label>Blazor</label>
         </p>
     </fieldset>
 
      <div>
         <button type="submit" class="btn btn-primary">Apply</button>
-        <a class="btn btn-warning" href="/">Home</a>
+        <a class="btn btn-warning" asp-controller="Home" asp-action="Index">Home</a>
     </div>
 
 </form>

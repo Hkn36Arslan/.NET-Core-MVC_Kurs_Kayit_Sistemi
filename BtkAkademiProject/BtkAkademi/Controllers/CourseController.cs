@@ -12,10 +12,11 @@ namespace BtkAkademi.Controllers
         public IActionResult Apply()
         {
             return View();
-        }
+        } 
        
         [HttpPost]
-        public IActionResult Apply(Candidate model)
+        [ValidateAntiForgeryToken]
+        public IActionResult Apply([FromForm] Candidate model)
         {
             return View();
         }
