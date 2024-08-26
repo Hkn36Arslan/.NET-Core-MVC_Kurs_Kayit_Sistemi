@@ -1,6 +1,6 @@
 namespace BtkAkademi.Models
 {
-    public class Candicate
+    public class Candidate
     {
        public String? Email {get;set;} = String.Empty;
        public String? FirstName {get;set;} = String.Empty;
@@ -11,7 +11,7 @@ namespace BtkAkademi.Models
 
        public DateTime ApplyAt {get;set;}
 
-       public Candicate(){
+       public Candidate(){
          ApplyAt=DateTime.Now;
        }
     }

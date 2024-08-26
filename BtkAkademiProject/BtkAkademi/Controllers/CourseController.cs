@@ -1,13 +1,22 @@
 using Microsoft.AspNetCore.Mvc;
+using BtkAkademi.Models;
 
 namespace BtkAkademi.Controllers
 {
-    public class CourseController: Controller
+    public class CourseController : Controller
     {
-        public IActionResult Index(){
+        public IActionResult Index()
+        {
             return View();
         }
-        public IActionResult Apply(){
+        public IActionResult Apply()
+        {
+            return View();
+        }
+       
+        [HttpPost]
+        public IActionResult Apply(Candidate model)
+        {
             return View();
         }
     }

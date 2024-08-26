@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BtkAkademiProject",
+    "\\BtkAkademiProject\\BtkAkademi",
+    "\\BtkAkademiProject\\BtkAkademi\\Controllers",
+    "\\BtkAkademiProject\\BtkAkademi\\Models",
+    "\\BtkAkademiProject\\BtkAkademi\\Views",
+    "\\BtkAkademiProject\\BtkAkademi\\Views\\Course"
+  ],
+  "SelectedNode": "\\BtkAkademiProject\\BtkAkademi\\Controllers\\CourseController.cs",
+  "PreviewInSolutionExplorer": false
+}
