@@ -12,7 +12,7 @@ Bu proje, BTK Akademi bünyesindeki üç ayrı eğitime katılım sağlamak iste
 
 1. **Depoyu Klonlayın:**
     ```bash
-    
+    git clone https://github.com/Hkn36Arslan/BtkAkademiProject.git
     cd BtkAkademiProject 
     ```
 2. **Gereksinimleri Yükleyin:**
