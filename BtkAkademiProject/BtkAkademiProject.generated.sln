@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BtkAkademi", "BtkAkademi\BtkAkademi.csproj", "{D79E03E4-F64A-4404-9B79-898559FD5EEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BtkAkademi", "BtkAkademi\BtkAkademi.csproj", "{88C326B3-A450-4409-984C-D81D8B8FD1CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D79E03E4-F64A-4404-9B79-898559FD5EEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D79E03E4-F64A-4404-9B79-898559FD5EEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D79E03E4-F64A-4404-9B79-898559FD5EEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D79E03E4-F64A-4404-9B79-898559FD5EEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88C326B3-A450-4409-984C-D81D8B8FD1CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88C326B3-A450-4409-984C-D81D8B8FD1CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88C326B3-A450-4409-984C-D81D8B8FD1CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88C326B3-A450-4409-984C-D81D8B8FD1CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

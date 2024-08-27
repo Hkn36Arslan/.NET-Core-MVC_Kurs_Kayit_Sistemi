@@ -3,7 +3,7 @@ namespace BtkAkademi.Models
 {
   public class Candidate
   {
-    [Required(ErrorMessage="E-mail is required.")]
+    [Required(ErrorMessage="E-mail is required.")] // Boş geçilemez uyarısı.
     public String? Email { get; set; } = String.Empty;
 
     [Required(ErrorMessage="FirstName is required.")]
@@ -19,7 +19,7 @@ namespace BtkAkademi.Models
 
     public DateTime ApplyAt { get; set; }
 
-    public Candidate()
+    public Candidate() // Contructor oluşturuldu ve ApplyAt nesnesine değer atandı.
     {
       ApplyAt = DateTime.Now;
     }

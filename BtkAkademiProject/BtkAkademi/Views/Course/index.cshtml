@@ -1,34 +1,37 @@
-@model IEnumerable<Candidate>
+@model IEnumerable<Candidate> // Hafızadaki kayıtların listelenmesi için kullanıyoruz.
 
-@if(Model.Count()>0){
-    
-    <h6 class="display-6">
-        Applications(@Model.Count())
-    </h6>
-    <table class="table table-hover table-striped">
-      <thead>
+@if (Model.Count() > 0) // Bu koşullu ifade, Model koleksiyonunun boş olup olmadığını kontrol eder. Eğer modelde eleman varsa başvurular listelenir. Yoksa, bir uyarı mesajı gösterilir. 
+{
+
+  <h6 class="display-6">
+    Applications(@Model.Count()) @* Başvuru sayısı *@
+  </h6>
+  <table class="table table-hover table-striped">
+    <thead>
+      <tr>
+        <th>Email</th>
+        <th>Full Name</th>
+        <th>Apply At</th>
+        <th>Course</th>
+      </tr>
+    </thead>
+    <tbody>
+      @foreach (Candidate candidate in Model) // Candidate modelinin oluşturulan nesneleri üzerinde döngü sağlar ve her adayın bilgileri tabloya eklenir.
+      {
         <tr>
-            <th>Email</th>
-            <th>Full Name</th>
-            <th>Apply At</th>
-            <th>Course</th>
+          <th>@candidate.Email</th>
+          <th>@candidate.FullName</th>
+          <th>@candidate.ApplyAt</th>
+          <th>@candidate.SelectedCourse</th>
         </tr>
-      </thead>
-      <tbody>
-         @foreach (Candidate candidate in Model){
-          <tr>
-            <th>@candidate.Email</th>
-            <th>@candidate.FullName</th>
-            <th>@candidate.ApplyAt</th>
-            <th>@candidate.SelectedCourse</th>
-          </tr>
-         }
-      </tbody>
-    </table>
+      }
+    </tbody>
+  </table>
 }
-else{
-    <div class="alert alert-info">
-     Three is no application. Please click here to 
-     <a class="alert-link" asp-action="Apply">apply.</a>
-    </div>
+else // Başvuru yoksa uyarı mesajı verir.
+{
+  <div class="alert alert-info">
+    There is no application. Please click here to
+    <a class="alert-link" asp-action="Apply">apply.</a>
+  </div>
 }
